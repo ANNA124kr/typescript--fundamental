@@ -11,3 +11,37 @@ message2 = "hello"
 const message3: string = "Hello!";
 // message3 = "world"; 
 // Cannot assign to 'message3' because it is a constant.ts(2588)
+///===========================================================================
+
+// #region Home task
+
+enum IceCup {
+  little = 10,
+  big = 25
+}
+
+
+enum Suplement {
+  chocolate = 5,
+  caramel = 6,
+  berry = 10
+}
+
+function calCostOfIce (cup : IceCup, add: Suplement, marshmelo? : number) : number {
+
+  let cost: number
+
+  if (marshmelo) {
+    cost = cup + add + 5
+  }
+  else{
+    cost = cup + add
+  }
+    return cost
+}
+
+calCostOfIce(IceCup.little, Suplement.caramel)
+
+
+
+// #endregion
